@@ -1,0 +1,12 @@
+const Ingredients = (props) => {
+    const ingredients = props.ingredients;
+    return (
+        <>
+            <u>{props.label}</u>
+            <li>{props.options}</li>
+            
+        </>
+    );
+}
+
+export default Review;
