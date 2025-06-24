@@ -1,6 +1,6 @@
 import './App.css';
 import Review from './components/Review';
-import Ingredients from './components/Ingredients';
+import Ingredients from './components/Ingredients.js';
 
 function App() {
   // Review information
@@ -81,7 +81,7 @@ function App() {
           <h4 class="dish">Custom Burrito</h4>
           <p>A gourmet burrito made to your requests. Choose any combination of these options: </p>
           <ul>
-            {ingredients.map(ingredient=> <Ingredients ingredient={ingredient}/>)
+            {ingredients.map(ingredient=> <Ingredients label = {ingredient.label} options = {ingredient.options}></Ingredients>)
             /* TODO: Write and use a component that turns the ingredients into
             the expected output for this section:
            <u>Tortilla</u>
